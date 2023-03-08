@@ -11,14 +11,16 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href=".css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-<!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
-
-
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Notifications page</title>
   </head>
@@ -26,27 +28,52 @@
     <!-- notifications -->
     <main class="notifications">
       <header class="header">
-        <h1 class="header__title">Notifications 3</h1>
+        <h1 class="header__title">
+          Notifications <span class="unread-count">3</span>
+        </h1>
         <a href="#" class="header__link">Mark all as read</a>
       </header>
 
-      <!-- notification -->
+      <!-- notification unread -->
       <article class="notification notification--unread">
+        <img
+          src="./assets/images/avatar-mark-webber.webp"
+          alt="User Avatar"
+          class="avatar"
+        />
         <h2 class="notification__title">
           <strong>Mark Webber</strong> reacted to your recent post
-          <a href="" class="link link--post">My first tournament today!</a> 
+          <a href="" class="link link--post">My first tournament today!</a>
           <span class="unread-bubble"></span>
         </h2>
         <p class="notification__date">1m ago</p>
       </article>
-      <article class="notification">
+
+      <!-- notification picture -->
+      <article class="notification notification--picture">
+        <img
+          src="./assets/images/avatar-kimberly-smith.webp"
+          alt="User Avatar"
+          class="avatar"
+        />
+        <h2 class="notification__title">
+          <strong>Kimberly Smith</strong>
+          commented on your picture
+        </h2>
+        <p class="notification__date">1 week ago</p>
+        <img class="notification__image" src="./assets/images/image-chess.webp" alt="Image Attached">
+      </article>
+
+      <!-- notification with message -->
+      <article class="notification notification--message">
         <img
           src="./assets/images/avatar-rizky-hasanuddin.webp"
           alt="User Avatar"
           class="avatar"
         />
         <h2 class="notification__title">
-          <strong>Rizky Hasanuddin</strong> sent you a private message
+          <span class="notification__title--username">Rizky Hasanuddin</span>
+          sent you a private message
         </h2>
         <p class="notification__date">5 days ago</p>
         <p class="notification__message">
@@ -55,28 +82,31 @@
           game.
         </p>
       </article>
-      <!-- Mark Webber reacted to your recent post My first tournament today!
-  1m ago
 
-  Angela Gray followed you
-  5m ago
+<!-- notification -->
+      <article class="notification">
+        <img
+          src="./assets/images/avatar-anna-kim.webp"
+          alt="User Avatar"
+          class="avatar"
+        />
+        <h2 class="notification__title">
+          <strong> Anna Kim </strong> left the group <a class="link link--group" href="#">Chess Club </a> 
+        
+        </h2>
+        <p class="notification__date">2 weeks ago</p>
+      </article>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
 
-  Kimberly Smith commented on your picture
-  1 week ago
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago -->
+      Angela Gray followed you 5m ago Jacob Thompson has joined your group Chess
+      Club 1 day ago Rizky Hasanuddin sent you a private message 5 days ago
+      Hello, thanks for setting up the Chess Club. I've been a member for a few
+      weeks now and I'm already having lots of fun and improving my game. Nathan
+      Peterson reacted to your recent post 5 end-game strategies to increase
+      your win rate 2 weeks ago Anna Kim left the group Chess Club 2 weeks ago
+      -->
     </main>
   </body>
 </html>

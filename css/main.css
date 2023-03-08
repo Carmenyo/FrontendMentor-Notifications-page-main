@@ -7,6 +7,8 @@
 --Grayishblue: hsl(219, 14%, 63%);
 --Darkgrayishblue: hsl(219, 12%, 42%);
 --Verydarkblue: hsl(224, 21%, 14%);
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
 }
 *{
     box-sizing: border-box;
@@ -15,12 +17,16 @@ html, body {
     height: 100%;
 }
 
-body{
+body {
     font-family:'Plus Jakarta Sans', sans-serif;
     display: flex;
     justify-content:center ;
     align-items: center;
     background-color: var(--Lightgrayishblue2);
+}
+a {
+    text-decoration: none;
+    color: var(--Darkgrayishblue) ;
 }
 /* Notifications */
 .notifications{
@@ -28,4 +34,105 @@ max-width: 730px;
 background-color: var(--White);
 border-radius: 15px;
 padding: 2.5rem ;
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.header_title{
+    margin: 0;
+    font-size: 2rem;
+}
+.unread-count{
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+}
+
+/* Notification */
+.notification{
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "avatar title"
+    "avatar date";
+    grid-template-columns:min-content 1fr;
+}
+
+.notification--message{
+    grid-template-areas:
+    "avatar title"
+    "avatar date"
+    ".message";
+}
+.notification--picture{
+    grid-template-areas:
+    "avatar title image"
+    "avatar date image";
+    grid-template-columns: min-content 1fr min-content;
+}
+.notification--unread{
+    background-color: var(--Lightgrayishblue1);
+    border-radius: .5rem;
+}
+.avatar{
+    width: 45px;
+    height: auto;
+    grid-area: avatar;
+}
+
+.notification__title{
+    font-weight: normal;
+    margin: 0;
+    grid-area: title;
+    color: var(--Darkgrayishblue);
+    font-size: 1.3rem;
+}
+.link{
+    font-weight: bold;
+}
+.link--group{
+    color: var(--Blue
+    );
+}
+.unread-bubble{
+    background-color: var(--Red);
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: .5rem;
+}
+.notification__title--username{
+    color: var(--Verydarkblue
+    );
+    font-weight: bold;
+}
+
+.notification__date{
+    margin: 0;
+    grid-area: date;
+    color: var(--Grayishblue);
+    font-size: 1rem;
+}
+.notification__message{
+  margin: 0;
+  grid-area: message;  
+  color: var(--Darkgrayishblue);
+  border: 0.1rem solid var(--Darkgrayishblue);
+  border-radius: .5px;
+  padding: 1rem;
+}
+
+.notification__image{
+    width: 45px;
+    grid-area: image;
+
 }
