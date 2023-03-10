@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+   
+    <title>Frontend Mentor | Notifications page</title>
+   
     <link
       rel="icon"
       type="image/png"
@@ -22,7 +23,6 @@
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
     <!-- notifications -->
@@ -34,7 +34,7 @@
         <a href="#" class="header__link">Mark all as read</a>
       </header>
 
-      <!-- notification unread -->
+      <!-- notification 1-->
       <article class="notification notification--unread">
         <img
           src="./assets/images/avatar-mark-webber.webp"
@@ -49,22 +49,40 @@
         <p class="notification__date">1m ago</p>
       </article>
 
-      <!-- notification picture -->
-      <article class="notification notification--picture">
+
+      <!-- notification 2-->
+
+      <article class="notification notification--unread">
         <img
-          src="./assets/images/avatar-kimberly-smith.webp"
+          src="./assets/images/avatar-angela-gray.webp"
           alt="User Avatar"
           class="avatar"
         />
         <h2 class="notification__title">
-          <strong>Kimberly Smith</strong>
-          commented on your picture
+          <strong>Angela Gray</strong> followed you
+          <a href="" class="link link--post">My first tournament today!</a>
+          <span class="unread-bubble"></span>
         </h2>
-        <p class="notification__date">1 week ago</p>
-        <img class="notification__image" src="./assets/images/image-chess.webp" alt="Image Attached">
+        <p class="notification__date">5m ago</p>
+      </article>
+        
+      
+      <!-- notification 3-->
+      <article class="notification notification--unread">
+        <img
+          src="./assets/images/avatar-jacob-thompson.webp"
+          alt="User Avatar"
+          class="avatar"
+        />
+        <h2 class="notification__title">
+          <strong> Jacob Thompson </strong> has joined your group  <a class="link link--group" href="#">Chess Club </a> 
+          <span class="unread-bubble"></span>
+        </h2>
+        <p class="notification__date">1 day ago</p>
       </article>
 
-      <!-- notification with message -->
+      
+      <!-- notification 4-->
       <article class="notification notification--message">
         <img
           src="./assets/images/avatar-rizky-hasanuddin.webp"
@@ -83,7 +101,38 @@
         </p>
       </article>
 
-<!-- notification -->
+      
+      <!-- notification 5-->
+       <article class="notification notification--picture">
+        <img
+          src="./assets/images/avatar-kimberly-smith.webp"
+          alt="User Avatar"
+          class="avatar"
+        />
+        <h2 class="notification__title">
+          <strong>Kimberly Smith</strong>
+          commented on your picture
+        </h2>
+        <p class="notification__date">1 week ago</p>
+        <img class="notification__image" src="./assets/images/image-chess.webp" alt="Image Attached">
+      </article>
+
+      
+      <!-- notification 6-->
+      <article class="notification">
+        <img
+          src="./assets/images/avatar-anna-kim.webp"
+          alt="User Avatar"
+          class="avatar"
+        />
+        <h2 class="notification__title">
+          <strong>  Nathan Peterson  </strong>reacted to your recent post  <a href="" class="link link--post"> 5 end-game strategies to increase your win rate</a>
+        </h2>
+        <p class="notification__date">2 weeks ago</p>
+      </article>
+
+      
+      <!-- notification 7-->
       <article class="notification">
         <img
           src="./assets/images/avatar-anna-kim.webp"
@@ -92,21 +141,11 @@
         />
         <h2 class="notification__title">
           <strong> Anna Kim </strong> left the group <a class="link link--group" href="#">Chess Club </a> 
-        
         </h2>
         <p class="notification__date">2 weeks ago</p>
       </article>
 
-
-
-
-      Angela Gray followed you 5m ago Jacob Thompson has joined your group Chess
-      Club 1 day ago Rizky Hasanuddin sent you a private message 5 days ago
-      Hello, thanks for setting up the Chess Club. I've been a member for a few
-      weeks now and I'm already having lots of fun and improving my game. Nathan
-      Peterson reacted to your recent post 5 end-game strategies to increase
-      your win rate 2 weeks ago Anna Kim left the group Chess Club 2 weeks ago
-      -->
     </main>
   </body>
+  <script src="./js/main.js "></script>
 </html>

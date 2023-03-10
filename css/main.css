@@ -45,7 +45,7 @@ padding: 2.5rem ;
 }
 .header_title{
     margin: 0;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 .unread-count{
     background-color: var(--Blue);
@@ -63,6 +63,7 @@ padding: 2.5rem ;
     "avatar title"
     "avatar date";
     grid-template-columns:min-content 1fr;
+    margin-bottom: 1rem;
 }
 
 .notification--message{
