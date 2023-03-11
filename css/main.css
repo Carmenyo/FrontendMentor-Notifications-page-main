@@ -13,9 +13,6 @@
 *{
     box-sizing: border-box;
 }
-/* html, body {
-    height: 100%;
-} */
 
 body {
     font-family:'Plus Jakarta Sans', sans-serif;
@@ -23,17 +20,19 @@ body {
     justify-content:center ;
     align-items: center;
     background-color: var(--Lightgrayishblue2);
+    font-size: .6rem;
 }
 a {
     text-decoration: none;
     color: var(--Darkgrayishblue) ;
+    font-size: .9rem;
 }
 /* Notifications */
 .notifications{
 max-width: 730px;
 background-color: var(--White);
-border-radius: 15px;
-padding: 2.5rem ;
+border-radius: 10px;
+padding: .4rem ;
 }
 
 /* Header */
@@ -41,29 +40,30 @@ padding: 2.5rem ;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: .6rem;
 }
 .header_title{
-    margin: 0;
-    font-size: 4rem;
+    font-size: .5rem;
+    
 }
 .unread-count{
     background-color: var(--Blue);
     color: var(--White);
-    padding: .2rem 1rem;
-    border-radius: 1rem;
+    padding: .1rem .6rem;
+    border-radius: .5rem;
+    
 }
 
 /* Notification */
 .notification{
-    padding: 1rem;
+    padding: .5rem;
     display: grid;
-    gap: 1rem;
     grid-template-areas:
     "avatar title"
     "avatar date";
     grid-template-columns:min-content 1fr;
     margin-bottom: 1rem;
+    font-size: .2rem;
 }
 
 .notification--message{
@@ -71,6 +71,7 @@ padding: 2.5rem ;
     "avatar title"
     "avatar date"
     ".message";
+    font-size: .9rem;
 }
 .notification--picture{
     grid-template-areas:
@@ -79,21 +80,21 @@ padding: 2.5rem ;
     grid-template-columns: min-content 1fr min-content;
 }
 .notification--unread{
-    background-color: var(--Lightgrayishblue1);
+    background-color: var(--Verylightgrayishblue);
     border-radius: .5rem;
 }
 .avatar{
-    width: 45px;
+    width: 40px;
     height: auto;
     grid-area: avatar;
+    margin-right: 1rem;
 }
 
 .notification__title{
     font-weight: normal;
-    margin: 0;
     grid-area: title;
-    color: var(--Darkgrayishblue);
-    font-size: 1.3rem;
+    color: var(--Grayishblue);
+    font-size: .9rem;
 }
 .link{
     font-weight: bold;
@@ -115,25 +116,26 @@ padding: 2.5rem ;
     color: var(--Verydarkblue
     );
     font-weight: bold;
+    margin-right: .2rem;
 }
 
 .notification__date{
     margin: 0;
     grid-area: date;
     color: var(--Grayishblue);
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .notification__message{
-  margin: 0;
+  margin: 0.5rem;
   grid-area: message;  
   color: var(--Darkgrayishblue);
-  border: 0.1rem solid var(--Darkgrayishblue);
+  border: 0.1rem solid var(--Lightgrayishblue1);
   border-radius: .5px;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .notification__image{
-    width: 45px;
+    width: 40px;
     grid-area: image;
 
 }
